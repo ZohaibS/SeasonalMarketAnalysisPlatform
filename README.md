@@ -24,3 +24,9 @@ Step 5: The python script dumps the processed and some of the important raw data
      The Dashboards are unique to individual stock tickers and the data is served via Flask.
 
 
+If you are interested in the project at all, feel free to fork it and if you want to get involved deeper, I'd be excited to collaborate!
+
+
+
+My contact information is: zohaibrsyed@gmail.com
+Alternatively you may reach me on LinkedIn at https://www.linkedin.com/in/zohaibrsyed/
