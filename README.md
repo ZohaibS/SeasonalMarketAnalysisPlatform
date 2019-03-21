@@ -2,6 +2,7 @@
 
 This is an app in progress I plan to build up over the long run. For the time being, it uses IEX data and for the time being, it only views the profitable trading problem from a single approach / with a single strategy. In the following years I hope to introduce more approaches / strategies, expand the data lake, and create a user friendly front end. This is all just for fun and learning, and to a lesser extent, (when this is production ready) to experiment with various strategies with my personal funds. 
 
+If you are interested in the project at all, feel free to fork it and if you want to get involved deeper, I'd be excited to collaborate!
 
 
 General Overview:
@@ -26,9 +27,5 @@ Step 5: The python script dumps the processed and some of the important raw data
      The Dashboards are unique to individual stock tickers and the data is served via Flask.
 
 
-If you are interested in the project at all, feel free to fork it and if you want to get involved deeper, I'd be excited to collaborate!
-
-
-
-My contact information is: zohaibrsyed@gmail.com
-Alternatively you may reach me on LinkedIn at https://www.linkedin.com/in/zohaibrsyed/
+Feel free to contact me at zohaibrsyed@gmail.com.
+Alternatively you may reach me on LinkedIn at https://www.linkedin.com/in/zohaibrsyed/.
