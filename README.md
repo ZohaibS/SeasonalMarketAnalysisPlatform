@@ -1,6 +1,8 @@
 # SeasonalMarketAnalysisPlatform
 
-This is an app in progress. It uses IEX data.
+This is an app in progress I plan to build up over the long run. For the time being, it uses IEX data and for the time being, it only views the profitable trading problem from a single approach / with a single strategy. In the following years I hope to introduce more approaches / strategies, expand the data lake, and create a user friendly front end. This is all just for fun and learning, and to a lesser extent, (when this is production ready) to experiment with various strategies with my personal funds. 
+
+
 
 General Overview:
 
