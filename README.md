@@ -5,6 +5,9 @@ This is an app in progress I plan to build up over the long run. For the time be
 If you are interested in the project at all, feel free to fork it and if you want to get involved deeper, I'd be excited to collaborate!
 
 
+________________________________________________________________________________________________________________________________________
+
+
 General Overview:
 
                                         Data Extraction and Processing Setup (to be automated on deployal)
