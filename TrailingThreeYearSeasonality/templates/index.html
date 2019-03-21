@@ -1,0 +1,69 @@
+<html>
+   <head>
+      <title></title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript" src = "https://www.google.com/jsapi">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['treemap']});     
+      </script>
+        <link rel="stylesheet" src="{{url_for('static', filename='d3Style.css')}}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   </head>
+   
+   <body>
+         <input type="hidden"  id='data' value='{{ data }}'>
+
+         <div class="side-bar">
+               <li class="menu-head">
+                     <h4><center>Diving Into the Data</center></h4> </span></a>
+                 </li>
+                 <div class="menu">
+                   <p>
+                     <h6><hr>Here you can search for a ticker of your choice or check the rankings for historical and predictive data. For the time being, the only ranking available is historical volatility. As more work is done to develop this app, more rankings will be developed. Also, for the time being only the historical report pipeline is setup so predictive reports will hopefully be up soon!</h6>
+                  </p>
+                   <hr>
+                   <h5><center>Search for a Ticker</center></h5>
+                   <hr>
+                   <center> <li>
+                       <form class="navbar-form navbar-center" role="search">
+                           <div class="form-group">
+                                 <input type="text" class="form-control" id="ticker" placeholder="Ticker">
+                             </div>
+                           <a id="search" class="btn btn-dark">Search<span class="glyphicon glyphicon-ok"></span></a>
+                       </form>
+                   </li> </center>
+                 </div>
+             </ul>
+           </div> 
+           
+           <div class="content">
+               <div class="col-md-12 col-sm-12">
+                   <div class="panel panel-default">
+                       <div class="panel-body">
+                           <h1>Seasonality Rankings (Trailing Three Year)</h1>
+
+                           <hr>
+                           <div class="table-responsive">
+                               <table id = "myTable" class="table table-striped">
+                                   <thead>
+                                       <tr>
+                                           <th><center>Volatility</center></th>
+                                           <th><center>Ticker</center></th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                   </tbody>
+                               </table>
+                           </div>
+
+         </div>
+
+         <script type="text/javascript" language="javascript" src="{{url_for('static', filename='Sherpa.js')}}"></script>
+
+</html>   

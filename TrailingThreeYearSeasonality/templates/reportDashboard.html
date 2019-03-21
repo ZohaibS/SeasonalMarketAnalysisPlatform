@@ -1,0 +1,135 @@
+<html>
+   <head>
+      <title></title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript" src = "https://www.google.com/jsapi">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['treemap']});     
+      </script>
+ 
+
+
+   </head>
+   
+   <body>
+      <input type="hidden"  id='my_variable_x11' value='{{ x11 }}'>
+      <input type="hidden"  id='my_variable_y11' value='{{ y11 }}'>
+    
+      <input type="hidden"  id='my_variable_x12' value='{{ x12 }}'>
+      <input type="hidden"  id='my_variable_y12' value='{{ y12 }}'>
+
+      <input type="hidden"  id='my_variable_x13' value='{{ x13 }}'>
+      <input type="hidden"  id='my_variable_y13' value='{{ y13 }}'>
+
+      <input type="hidden"  id='my_variable_x21' value='{{ x21 }}'>
+      <input type="hidden"  id='my_variable_y21' value='{{ y21 }}'>
+
+      <input type="hidden"  id='my_variable_x22' value='{{ x22 }}'>
+      <input type="hidden"  id='my_variable_y22' value='{{ y22 }}'>
+
+      <input type="hidden"  id='my_variable_x23' value='{{ x23 }}'>
+      <input type="hidden"  id='my_variable_y23' value='{{ y23 }}'>
+
+      <input type="hidden"  id='my_variable_x31' value='{{ x31 }}'>
+      <input type="hidden"  id='my_variable_y31' value='{{ y31 }}'>
+
+      <input type="hidden"  id='my_variable_x32' value='{{ x32 }}'>
+      <input type="hidden"  id='my_variable_y32' value='{{ y32 }}'>
+
+      <input type="hidden"  id='my_variable_x33' value='{{ x33 }}'>
+      <input type="hidden"  id='my_variable_y33' value='{{ y33 }}'>
+
+
+      <div class="jumbotron">
+
+         <h1><b>Seasonality Dashboard (Trailing Three Year)</b></h1>
+
+      </div>
+      <br>
+      <br>
+      <div class="container">
+         <h2><b>End of Day Closing Prices</b></h2>
+      <div class="row">
+      <div class="col-md-4">
+      <div id="myDiv1"></div>
+      </div>
+      <div class="col-md-4">
+      <div id="myDiv2"></div>
+      </div>
+      <div class="col-md-4">
+      <div id="myDiv3"></div>
+      </div>
+      </div>
+   </div>
+
+   <div class="container">
+         <h2><b>Daily Returns Signals</b></h2>
+
+      <div class="row">
+            <div class="col-md-4"  >
+            <div id="SignalDiv1"></div>
+            </div>
+            <div class="col-md-4">
+            <div id="SignalDiv2"></div>
+            </div>
+            <div class="col-md-4">
+               
+            <div id="SignalDiv3"></div>
+            </div>
+            </div>
+   </div>      
+
+   <div class="container">
+         <h2><b>Annual Octave Spreads</b></h2>
+
+      <div class="row">
+            <div class="col-md-4"  >
+            <div id="OctaveSpreadsDiv1"></div>
+            </div>
+            <div class="col-md-4">
+            <div id="OctaveSpreadsDiv2"></div>
+            </div>
+            <div class="col-md-4">               
+            <div id="OctaveSpreadsDiv3"></div>
+            </div>
+            </div>
+   </div> 
+
+   <div class="container">
+         <h2><b>Annual Weekly Octaves</b></h2>
+
+      <div class="row">
+            <div class="col-md-4"  >
+            <div id="OctavesDiv1"></div>
+            </div>
+            <div class="col-md-4">
+            <div id="OctavesDiv2"></div>
+            </div>
+            <div class="col-md-4">               
+            <div id="OctavesDiv3"></div>
+            </div>
+            </div>
+   </div> 
+
+      <br>
+
+        <link rel="stylesheet" src="{{url_for('static', filename='d3Style.css')}}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script type="text/javascript" language="javascript" src="{{url_for('static', filename='EOD_1.js')}}"></script>
+        <script type="text/javascript" language="javascript" src="{{url_for('static', filename='EOD_2.js')}}"></script>
+        <script type="text/javascript" language="javascript" src="{{url_for('static', filename='EOD_3.js')}}"></script>
+        <script type="text/javascript" language="javascript" src="{{url_for('static', filename='Signal_1.js')}}"></script>
+        <script type="text/javascript" language="javascript" src="{{url_for('static', filename='Signal_2.js')}}"></script>
+        <script type="text/javascript" language="javascript" src="{{url_for('static', filename='Signal_3.js')}}"></script>
+        <!-- <script type="text/javascript" language="javascript" src="{{url_for('static', filename='WeeklyOctaves_1.js')}}"></script>
+        <script type="text/javascript" language="javascript" src="{{url_for('static', filename='WeeklyOctaves_2.js')}}"></script>
+        <script type="text/javascript" language="javascript" src="{{url_for('static', filename='WeeklyOctaves_3.js')}}"></script> -->
+
+      </body>
+</html>   
