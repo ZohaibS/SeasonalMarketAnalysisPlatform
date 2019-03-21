@@ -28,6 +28,8 @@ Step 5: The python script dumps the processed and some of the important raw data
      Consists of an Interactive Table for Browsing, a Historical Dashboard, and a Predictions Dashboard.
      The Interactive Table will allow for searching/browsing based on various criteria. (currently being built on index.html)
      The Dashboards are unique to individual stock tickers and the data is served via Flask.
+     
+     Currently, only the Historical Dashboard is functional and still requires some bugfixing and aesthetic improvements.
 
 
 Feel free to contact me at zohaibrsyed@gmail.com.
